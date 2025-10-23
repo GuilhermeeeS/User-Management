@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Control iD — Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="has-bg">
+    <main class="container center">
+      <div class="card login-card">
+        <h1 class="title">Control iD — Login</h1>
+        <form id="loginForm">
+          <label for="password">Senha</label>
+          <input id="password" name="password" type="password" placeholder="Digite a senha" required />
+
+          <div class="actions">
+            <button type="submit" class="btn primary" id="btnLogin">Entrar</button>
+          </div>
+
+          <p class="help">A senha é validada no servidor. Contate o administrador se necessário.</p>
+        </form>
+      </div>
+    </main>
+
+    <script src="/js/config.js"></script>
+    <script src="/js/auth.js"></script>
+  </body>
+</html>

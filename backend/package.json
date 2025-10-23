@@ -1,0 +1,29 @@
+{
+  "name": "controlid-manager",
+  "version": "1.0.0",
+  "description": "Sistema de gestão de usuários para relógios de ponto Control iD",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "generate-hash": "node -e \"const bcrypt = require('bcryptjs'); console.log('Hash da senha 14e13y5a:', bcrypt.hashSync('14e13y5a', 10));\""
+  },
+  "keywords": [
+    "controlid",
+    "ponto",
+    "biometria"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "node-fetch": "^2.7.0",
+    "https": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
